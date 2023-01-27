@@ -13,6 +13,7 @@
 
 body {
   background: var(--cream);
+  font-family: "Montserrat", sans-serif;
 }
 
 .wrapper {
@@ -47,13 +48,6 @@ body {
   font-family: "Fraunces", serif;
 }
 
-.info .details,
-.info h2,
-.strike,
-.button {
-  font-family: "Montserrat", sans-serif;
-}
-
 .info h2 {
   font-size: 0.9rem;
 }
@@ -68,12 +62,16 @@ body {
   font-size: 0.8rem;
   text-decoration: line-through;
   color: black;
+  font-family: "Montserrat", sans-serif;
+  vertical-align: middle;
 }
 
 .button {
   background-color: var(--dark-cyan);
   color: white;
   border: 0;
-  height: 2rem;
+  height: 3rem;
   border-radius: 0.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
