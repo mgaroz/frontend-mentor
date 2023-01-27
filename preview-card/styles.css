@@ -6,9 +6,24 @@
   box-sizing: border-box;
 }
 
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+}
+
 .wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+}
+
+.card {
+  display: flex;
+  width: 37.5rem;
+  height: 28.125rem;
+}
+
+.card.image {
+  flex: 1;
 }
