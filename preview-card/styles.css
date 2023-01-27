@@ -11,6 +11,10 @@
   --cream: hsl(30, 38%, 92%);
 }
 
+body {
+  background: var(--cream);
+}
+
 .wrapper {
   display: flex;
   align-items: center;
@@ -24,6 +28,47 @@
   height: 28.125rem;
 }
 
-.card.image {
-  flex: 1;
+.image img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  background: white;
+}
+
+.info h1 {
+  font-family: "Fraunces", serif;
+}
+
+.info .details,
+.info h2,
+.strike {
+  font-family: "Montserrat", sans-serif;
+}
+
+.info h2 {
+  font-size: 0.9rem;
+}
+
+.price {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+}
+
+.strike {
+  font-size: 0.8rem;
+  text-decoration: line-through;
+}
+
+.button {
+  background-color: var(--dark-cyan);
+  color: white;
+  border: 0;
+  height: 2rem;
+  border-radius: 0.5rem;
 }
