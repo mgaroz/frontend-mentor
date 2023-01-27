@@ -77,7 +77,7 @@ body {
   display: inline-block;
   font-size: 0.8rem;
   text-decoration: line-through;
-  color: gray;
+  color: var(--dark-grayish-blue);
   font-family: "Montserrat", sans-serif;
   vertical-align: middle;
   padding-left: 0.8rem;
