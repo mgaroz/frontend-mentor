@@ -32,6 +32,10 @@ body {
   height: 28.125rem;
 }
 
+.image {
+  width: 50%;
+}
+
 .image img {
   object-fit: cover;
   height: 100%;
