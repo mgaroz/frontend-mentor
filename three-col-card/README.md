@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [Github Pages](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/mgaroz/frontend-mentor/tree/main/three-col-card)
+- Live Site URL: [Github Pages](mgaroz.github.io/frontend-mentor/three-col-card)
 
 ## My process
 
