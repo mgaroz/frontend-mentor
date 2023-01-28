@@ -66,6 +66,7 @@ main {
 .card-body h1 {
   font-size: 1.75rem;
   font-weight: 900;
+  color: var(--color-dark-blue);
 }
 
 .card-body p {
