@@ -167,6 +167,11 @@ main {
     max-height: 250px;
   }
 
+  .card-right,
+  .card-right .overlay {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
   .stats {
     display: block;
     text-align: center;
