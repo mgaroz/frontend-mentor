@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bright-orange: hsl(31, 77%, 52%);
+  --color-dark-cyan: hsl(184, 100%, 22%);
+  --color-very-dark-cyan: hsl(179, 100%, 13%);
+  --color-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --color-very-light-gray: hsl(0, 0%, 95%);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: "Lexend Deca", sans-serif;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  font-size: 15px;
+  background-color: var(--color-very-light-gray);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+p {
+  margin-top: 1.8rem;
+  line-height: 1.6;
+}
+
+.card {
+  display: flex;
+  width: 57.5rem;
+  height: 31.25rem;
+  color: var(--color-transparent-white);
+  border-radius: 1rem;
+}
+
+.mini-card-1,
+.mini-card-2,
+.mini-card-3 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 3rem;
+}
+
+.mini-card-1,
+.mini-card-1 .button:hover {
+  background-color: var(--color-bright-orange);
+}
+
+.mini-card-2,
+.mini-card-2 .button:hover {
+  background-color: var(--color-dark-cyan);
+}
+
+.mini-card-3,
+.mini-card-3 .button:hover {
+  background-color: var(--color-very-dark-cyan);
+}
+
+.mini-card-1 {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.mini-card-3 {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.button {
+  margin-top: 5.25rem;
+  border: 0;
+  border-radius: 2rem;
+  height: 3rem;
+  width: 9.25rem;
+  font-family: inherit;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.mini-card-1 .button {
+  color: var(--color-bright-orange);
+}
+
+.mini-card-2 .button {
+  color: var(--color-dark-cyan);
+}
+
+.mini-card-3 .button {
+  color: var(--color-very-dark-cyan);
+}
+
+.button:hover {
+  cursor: pointer;
+  color: var(--color-transparent-white);
+  border: 2px solid var(--color-transparent-white);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 450px) {
+  body {
+    /* grid-template-rows: 1fr auto; */
+    overflow: hidden;
+  }
+
+  main {
+    width: 100vw;
+    overflow-y: scroll;
+    margin-top: 1rem;
+    align-items: flex-start;
+  }
+
+  .card {
+    flex-direction: column;
+    width: 20.4375rem;
+  }
+
+  .mini-card-1 {
+    border-radius: 0.4rem 0.4rem 0 0;
+  }
+
+  .mini-card-3 {
+    border-radius: 0 0 0.4rem 0.4rem;
+  }
+
+  .button {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+}
