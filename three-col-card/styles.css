@@ -124,7 +124,6 @@ p {
 
 @media (max-width: 450px) {
   body {
-    /* grid-template-rows: 1fr auto; */
     overflow: hidden;
   }
 
