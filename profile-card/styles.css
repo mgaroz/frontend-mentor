@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-dark-cyan: hsl(185, 75%, 39%);
+  --color-very-dark-desat-blue: hsl(229, 23%, 23%);
+  --color-dark-grayish-blue: hsl(227, 10%, 46%);
+  --color-dark-gray: hsl(0, 0%, 59%);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  height: 100%;
+  background: url("./images/bg-pattern-top.svg") no-repeat,
+    url("./images/bg-pattern-bottom.svg") no-repeat;
+  background-position: top -50vh left 0px, bottom -50vh right 0px;
+  background-color: var(--color-dark-cyan);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 21.875rem;
+  height: 23.375rem;
+  background-color: white;
+  border-radius: 0.95rem;
+  box-shadow: 10px 20px 40px hsla(229, 23%, 23%, 0.3);
+}
+
+.card-header {
+  text-align: center;
+  height: 8.75rem;
+  background-image: url("./images/bg-pattern-card.svg");
+  border-radius: 0.95rem 0.95rem 0 0;
+}
+
+.card-header img {
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 5.5px solid white;
+  top: 63%;
+  position: relative;
+  object-fit: cover;
+}
+
+.card-body {
+  text-align: center;
+  padding-top: 4.6rem;
+  padding-bottom: 1.6rem;
+}
+
+.card-body h1 {
+  font-size: 1.125rem;
+}
+
+.mt {
+  margin-top: 0.55rem;
+  font-size: 0.8rem;
+}
+
+.lighter {
+  color: var(--color-dark-gray);
+  font-weight: 400;
+}
+
+body hr {
+  border: 0;
+  border-top: 1px solid lightgray;
+  padding-bottom: 1.5rem;
+}
+
+.card-footer {
+  text-align: center;
+  margin: 0 3rem;
+}
+
+.stats-1,
+.stats-2,
+.stats-3 {
+  display: inline-block;
+}
+
+.stats-2 {
+  margin: 0 3rem;
+}
+
+.card-footer h2 {
+  font-size: 1.125rem;
+}
+
+.stats-sub {
+  font-size: 0.6rem;
+  padding-top: 0.3rem;
+  letter-spacing: 0.1rem;
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: white;
+}
+
+@media (max-width: 450px) {
+  body {
+    background-position: top -50vh right -25%, bottom -50vh left -25%;
+  }
+
+  .card {
+    width: 20.375rem;
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .stats-2 {
+    margin: 0;
+  }
+}
