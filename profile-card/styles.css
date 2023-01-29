@@ -24,7 +24,7 @@ body {
   height: 100%;
   background: url("./images/bg-pattern-top.svg") no-repeat,
     url("./images/bg-pattern-bottom.svg") no-repeat;
-  background-position: top -50vh left 0px, bottom -50vh right 0px;
+  background-position: top -50vh right 50vw, bottom -50vh left 50vw;
   background-color: var(--color-dark-cyan);
 }
 
@@ -120,10 +120,6 @@ body hr {
 }
 
 @media (max-width: 450px) {
-  body {
-    background-position: top -50vh right -25%, bottom -50vh left -25%;
-  }
-
   .card {
     width: 20.375rem;
   }

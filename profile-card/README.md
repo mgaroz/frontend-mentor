@@ -43,7 +43,7 @@ Background positioning with multiple images.
 
 ```css
 .body {
-  background-position: top -50vh left 0px, bottom -50vh right 0px;
+  background-position: top -50vh right 50vw, bottom -50vh left 50vw;
 }
 ```
 
