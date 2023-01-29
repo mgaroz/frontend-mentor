@@ -55,9 +55,7 @@ h4 {
 
 .cards {
   width: 69.75rem;
-  max-width: 69.75rem;
   height: 35.75rem;
-  max-height: 35.75rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
