@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-moderate-violet: hsl(263, 55%, 52%);
+  --color-very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --color-very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --color-light-gray: hsl(0, 0%, 81%);
+  --color-light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  background-color: var(--color-light-grayish-blue);
+  font-size: 13px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 12px;
+}
+
+h4 {
+  margin-top: 0.175rem;
+  font-size: 10px;
+  color: var(--color-light-gray);
+}
+
+.cards {
+  width: 69.75rem;
+  max-width: 69.75rem;
+  height: 35.75rem;
+  max-height: 35.75rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "card-1 card-1 card-2 card-5"
+    "card-3 card-4 card-4 card-5";
+  gap: 1.5rem 1.875rem;
+}
+
+.card-1 {
+  color: white;
+}
+
+.card-2,
+.card-4 {
+  color: var(--color-light-grayish-blue);
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 0.5rem;
+  padding: 1.5rem 1.875rem;
+  box-shadow: 40px 45px 50px -17px rgba(0, 0, 0, 0.15);
+}
+
+.card-3,
+.card-5 {
+  background-color: white;
+}
+
+.card-1 {
+  grid-area: card-1;
+  background-color: var(--color-moderate-violet);
+  background-image: url("./images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: right 20% top 0%;
+}
+
+.card-2 {
+  grid-area: card-2;
+  background-color: var(--color-very-dark-grayish-blue);
+}
+
+.card-3 {
+  grid-area: card-3;
+}
+
+.card-4 {
+  grid-area: card-4;
+  background-color: var(--color-very-dark-blackish-blue);
+}
+
+.card-5 {
+  grid-area: card-5;
+}
+
+.card-heading {
+  display: flex;
+  align-items: center;
+}
+
+.heading-info {
+  padding-left: 1rem;
+}
+
+.card-body > p {
+  margin-top: 1rem;
+  line-height: 1.4;
+  color: var(--color-light-gray);
+}
+
+.card-3 p,
+.card-5 p {
+  color: #8a8e91;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 450px) {
+  body {
+    overflow: hidden;
+  }
+
+  main {
+    overflow-y: scroll;
+    align-items: flex-start;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    align-items: center;
+  }
+}
