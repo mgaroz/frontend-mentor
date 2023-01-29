@@ -98,14 +98,9 @@ main {
   background-image: url(./images/image-header-desktop.jpg);
   min-width: 33.75rem;
   height: 27.875rem;
-}
-
-.card-right .overlay {
-  width: 100%;
-  height: 100%;
-  background-color: hsl(277, 76%, 50%);
-  opacity: 0.5;
-  filter: contrast(0.9);
+  background-color: var(--color-accent);
+  background-blend-mode: multiply;
+  opacity: 0.8;
 }
 
 .card-right,
@@ -124,12 +119,14 @@ main {
 
 @media (max-width: 450px) {
   body {
-    grid-template-rows: 1fr auto;
+    overflow: hidden;
   }
 
   main {
-    height: 100vh;
-    width: 100vw;
+    overflow-y: scroll;
+    align-items: flex-start;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   .card {
