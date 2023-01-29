@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [Github Pages](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/mgaroz/frontend-mentor/tree/main/testimonials-grid)
+- Live Site URL: [Github Pages](https://mgaroz.github.io/frontend-mentor/testimonials-grid/)
 
 ## My process
 
