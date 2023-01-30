@@ -12,6 +12,10 @@
     />
     <title>Frontend Mentor | [Challenge Name Here]</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
   </head>
   <body>
     <main>
@@ -20,39 +24,65 @@
           <div class="phone-gap"></div>
           <div class="phone-inner">
             <div class="phone-header">
-              <img src="./images/avatar.jpg" alt="avatar" class="avatar" />
-              <div>
-                <h4>Samuel Green</h4>
-                <p class="sub">Available to Walk</p>
+              <div class="header-left">
+                <i class="fa-solid fa-angle-left"></i>
+                <img src="./images/avatar.jpg" alt="avatar" class="avatar" />
+                <div>
+                  <h4>Samuel Green</h4>
+                  <p class="sub">Available to Walk</p>
+                </div>
+              </div>
+              <div class="header-right">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
               </div>
             </div>
             <div class="phone-screen">
               <div class="chat-left">
-                <p>That sounds great. I’d be happy with that.</p>
-                <p>Could you send over some pictures of your dog, please?</p>
+                <div class="bubble-left">
+                  <p>That sounds great. I’d be happy with that.</p>
+                </div>
+                <div class="bubble-left">
+                  <p>Could you send over some pictures of your dog, please?</p>
+                </div>
               </div>
               <div class="chat-right">
-                <img src="./images/dog-image-1.jpg" alt="dog image 1" />
-                <img src="./images/dog-image-2.jpg" alt="dog image 2" />
-                <img src="./images/dog-image-3.jpg" alt="dog image 3" />
-                <p>Here are a few pictures. She’s a happy girl!</p>
-                <p>Can you make it?</p>
+                <div class="images">
+                  <img src="./images/dog-image-1.jpg" alt="dog image 1" />
+                  <img src="./images/dog-image-2.jpg" alt="dog image 2" />
+                  <img src="./images/dog-image-3.jpg" alt="dog image 3" />
+                </div>
+                <div class="bubble-right">
+                  <p>Here are a few pictures. She’s a happy girl!</p>
+                </div>
+                <div class="bubble-right">
+                  <p>Can you make it?</p>
+                </div>
               </div>
               <div class="chat-left">
-                <p>
-                  She looks so happy! The time we discussed works. How long
-                  shall I take her out for?
-                </p>
+                <div class="bubble-left">
+                  <p>
+                    She looks so happy! The time we discussed works. How long
+                    shall I take her out for?
+                  </p>
+                </div>
               </div>
               <div class="pricing">
-                <p>30 minute walk $29</p>
-                <p>1 hour walk $49</p>
+                <div class="pricing-item">
+                  <p class="duration">
+                    <span class="circle"></span> 30 minute walk
+                  </p>
+                  <span class="price">$29</span>
+                </div>
+                <div class="pricing-item">
+                  <p><span class="circle"></span> 1 hour walk</p>
+                  <span class="price">$49</span>
+                </div>
               </div>
               <div class="message-field">
                 <p>Type a message…</p>
+                <i class="fa-solid fa-circle-chevron-right"></i>
               </div>
             </div>
-            <div class="phone-bottom"></div>
           </div>
         </div>
         <div class="right-side">
