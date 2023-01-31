@@ -187,6 +187,10 @@ main {
   background-color: var(--color-light-grayish-violet);
   padding: 0.6875rem 0.5rem 0.5rem 0.5rem;
   border-radius: 0 0 1.5rem 1.5rem;
+  height: 87%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .message-field {
@@ -284,6 +288,65 @@ main {
   background-color: var(--color-light-grayish-violet);
   bottom: 0;
   left: 72.8%;
+}
+
+#bubble-left-1 {
+  animation: 0.5s grow-in forwards;
+}
+
+#bubble-left-2,
+#bubble-left-p-2 {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  animation: 0.5s grow-in-2 ease 1.5s forwards;
+}
+
+#bubble-left-2 {
+}
+
+@keyframes grow-in {
+  0% {
+    display: none;
+    transform: scale(0);
+    transform-origin: bottom left;
+  }
+  50% {
+    display: block;
+    transform: scale(1.1);
+  }
+  100% {
+    display: block;
+    transform: scale(1);
+  }
+}
+
+@keyframes grow-in-2 {
+  0% {
+    transform: scale(0);
+    transform-origin: bottom left;
+    z-index: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    position: static;
+  }
+  100% {
+    transform: scale(1);
+    position: static;
+  }
+}
+
+#chat-left-2 {
+  display: none;
+}
+
+#chat-right-1 {
+  display: none;
+}
+
+#pricing-1 {
+  display: none;
 }
 
 .attribution {
