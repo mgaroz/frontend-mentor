@@ -46,7 +46,7 @@ main {
   display: grid;
   grid-template-columns: 2fr auto;
   width: 53.5rem;
-  gap: 8rem;
+  gap: 10rem;
 }
 
 .phone {
@@ -141,11 +141,10 @@ main {
 }
 
 .chat-right {
-  margin-top: 0.75rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-bottom: 0.5rem;
+  animation: 0.5s chat-right-margins ease 4s forwards;
 }
 
 .bubble-left,
@@ -291,7 +290,10 @@ main {
 }
 
 #bubble-left-1 {
-  animation: 0.5s grow-in forwards;
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  animation: 0.5s grow-in-left-2 1s forwards;
 }
 
 #bubble-left-2,
@@ -299,29 +301,49 @@ main {
   position: absolute;
   top: -100%;
   left: -100%;
-  animation: 0.5s grow-in-2 ease 1.5s forwards;
+  animation: 0.5s grow-in-left-2 ease 2.5s forwards;
 }
 
-#bubble-left-2 {
+#bubble-left-3,
+#bubble-left-p-3 {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  animation: 0.5s grow-in-left-2 ease 7s forwards;
 }
 
-@keyframes grow-in {
-  0% {
-    display: none;
-    transform: scale(0);
-    transform-origin: bottom left;
-  }
-  50% {
-    display: block;
-    transform: scale(1.1);
-  }
-  100% {
-    display: block;
-    transform: scale(1);
-  }
+#bubble-right-images {
+  position: absolute;
+  bottom: -100%;
+  left: -100%;
+  animation: 0.5s grow-in-right ease 4s forwards;
 }
 
-@keyframes grow-in-2 {
+#bubble-right-1,
+#bubble-right-p-1 {
+  position: absolute;
+  top: -100%;
+  left: 100%;
+  animation: 0.5s grow-in-right ease 4s forwards;
+}
+
+#bubble-right-2,
+#bubble-right-p-2 {
+  position: absolute;
+  top: -100%;
+  left: 100%;
+  animation: 0.5s grow-in-right ease 5.5s forwards;
+}
+
+#pricing-item-1,
+#pricing-item-2 {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  animation: 0.5s grow-in-left-2 ease 8.5s forwards;
+}
+
+@keyframes grow-in-left-2 {
   0% {
     transform: scale(0);
     transform-origin: bottom left;
@@ -334,6 +356,29 @@ main {
   100% {
     transform: scale(1);
     position: static;
+  }
+}
+
+@keyframes grow-in-right {
+  0% {
+    transform: scale(0);
+    transform-origin: bottom right;
+    z-index: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    position: static;
+  }
+  100% {
+    transform: scale(1);
+    position: static;
+  }
+}
+
+@keyframes chat-right-margins {
+  100% {
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -356,4 +401,32 @@ main {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 450px) {
+  main {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    gap: 5rem;
+    margin: 0 auto;
+  }
+
+  .right-side {
+    width: 85%;
+  }
+
+  .background-right {
+    /* bottom: 70vh; */
+    right: -75vw;
+    overflow: clip;
+    z-index: -999;
+  }
 }
