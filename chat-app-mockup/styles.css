@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --color-pale-violet: hsl(276, 100%, 81%);
+  --color-moderate-violet: hsl(276, 55%, 52%);
+  --color-desaturated-dark-violet: hsl(271, 15%, 43%);
+  --color-grayish-blue: hsl(206, 6%, 79%);
+  --color-very-dark-desaturated-violet: hsl(271, 36%, 24%);
+  --color-dark-grayish-violet: hsl(270, 7%, 64%);
+
+  /* Gradients */
+  --color-light-violet: hsl(264, 100%, 61%);
+  --color-light-magenta: hsl(293, 100%, 63%);
+
+  /* Secondary */
+  --color-light-grayish-violet: hsl(270, 20%, 96%);
+  --color-very-light-magenta: hsl(289, 100%, 72%);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  height: 100%;
+  background-color: hsl(0, 0%, 98%);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr auto;
+  width: 53.5rem;
+  gap: 10rem;
+}
+
+.phone {
+  height: 31.625rem;
+  width: 15.5rem;
+  background-color: white;
+  padding: 0.625rem 0.55rem;
+  border-radius: 1.75rem;
+  box-shadow: 0.5rem 1.5625rem 1.25rem 0.3125rem rgba(0, 0, 0, 0.07);
+}
+
+.phone-inner {
+  height: 100%;
+  width: 100%;
+  margin-top: -1.25rem;
+}
+
+.phone-gap {
+  height: 1.125rem;
+  width: 8rem;
+  border-radius: 0 0 0.7rem 0.7rem;
+  background-color: white;
+  position: relative;
+  top: -1%;
+  left: 25%;
+}
+
+.phone-header {
+  height: 4.125rem;
+  background: linear-gradient(
+    to right,
+    var(--color-light-violet),
+    var(--color-light-magenta)
+  );
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 0.75rem;
+  border-radius: 1.5rem 1.5rem 0.3rem 0.3rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  justify-content: space-between;
+}
+
+.phone-header h4 {
+  font-size: 0.65rem;
+  font-weight: normal;
+}
+
+.right-side {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.right-side h1 {
+  color: var(--color-very-dark-desaturated-violet);
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.right-side p {
+  color: var(--color-dark-grayish-violet);
+  line-height: 1.8;
+}
+
+.avatar {
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.sub {
+  color: var(--color-pale-violet);
+  font-size: 0.5rem;
+}
+
+.chat-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.chat-left p {
+  font-size: 0.5rem;
+  color: var(--color-moderate-violet);
+}
+
+.chat-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  animation: 0.5s chat-right-margins ease 4s forwards;
+}
+
+.bubble-left,
+.bubble-right {
+  max-width: 60%;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+
+.bubble-left {
+  background-color: hsl(272, 46%, 93%);
+  border-radius: 0.75rem 0.75rem 0.75rem 0.1875rem;
+}
+
+.bubble-right {
+  background-color: white;
+  border-radius: 0.75rem 0.75rem 0.1875rem 0.75rem;
+  box-shadow: 0 0.3125rem 0.3125rem rgba(0, 0, 0, 0.05);
+}
+
+.chat-right p {
+  font-size: 0.5rem;
+  color: var(--color-desaturated-dark-violet);
+}
+
+.chat-right img {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  border-radius: 25%;
+}
+
+.pricing p {
+  font-size: 0.5rem;
+}
+
+.phone-screen {
+  background-color: var(--color-light-grayish-violet);
+  padding: 0.6875rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 0 0 1.5rem 1.5rem;
+  height: 87%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.message-field {
+  background-color: white;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 1rem;
+  height: 2.125rem;
+  margin: 0.85rem 0 0.25rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message-field p {
+  font-size: 0.55rem;
+  color: var(--color-grayish-blue);
+}
+
+.images {
+  margin-bottom: 0.25rem;
+}
+
+.pricing-item {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(
+    to right,
+    var(--color-light-magenta),
+    var(--color-light-violet)
+  );
+  width: 70%;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem;
+  color: white;
+  border-radius: 0.75rem 0.75rem 0.75rem 0.1875rem;
+  max-height: 2rem;
+  align-items: center;
+}
+
+.circle {
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid var(--color-very-light-magenta);
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.duration {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.price {
+  font-size: 0.75rem;
+  vertical-align: middle;
+  font-weight: 500;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.message-field i {
+  font-size: 1.5rem;
+  color: var(--color-very-dark-desaturated-violet);
+}
+
+.background-left,
+.background-right {
+  position: fixed;
+  z-index: -999;
+}
+
+.background-left {
+  height: 44.6875rem;
+  width: 32.1875rem;
+  border-radius: 0 0 16.09375rem 16.09375rem;
+  background: linear-gradient(
+    25deg,
+    var(--color-light-violet) 40%,
+    var(--color-light-magenta)
+  );
+  top: 0;
+  right: 75.3%;
+}
+
+.background-right {
+  overflow: hidden;
+  height: 43.1rem;
+  width: 32.1875rem;
+  border-radius: 16.09375rem 16.09375rem 0 0;
+  background-color: var(--color-light-grayish-violet);
+  bottom: 0;
+  left: 72.8%;
+}
+
+#bubble-left-1 {
+  animation: 0.5s grow-in-left-2 1s forwards;
+}
+
+#bubble-left-2,
+#bubble-left-p-2 {
+  animation: 0.5s grow-in-left-2 ease 2.5s forwards;
+}
+
+#bubble-left-3,
+#bubble-left-p-3 {
+  animation: 0.5s grow-in-left-2 ease 7s forwards;
+}
+
+#bubble-right-images {
+  animation: 0.5s grow-in-right ease 4s forwards;
+}
+
+#bubble-right-1,
+#bubble-right-p-1 {
+  animation: 0.5s grow-in-right ease 4s forwards;
+}
+
+#bubble-right-2,
+#bubble-right-p-2 {
+  animation: 0.5s grow-in-right ease 5.5s forwards;
+}
+
+#pricing-item-1,
+#pricing-item-2 {
+  animation: 0.5s grow-in-left-2 ease 8.5s forwards;
+}
+
+#bubble-left-1,
+#bubble-left-2,
+#bubble-left-p-2,
+#bubble-left-3,
+#bubble-left-p-3,
+#bubble-right-images,
+#bubble-right-1,
+#bubble-right-p-1,
+#bubble-right-2,
+#bubble-right-p-2,
+#pricing-item-1,
+#pricing-item-2 {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+}
+
+@keyframes grow-in-left-2 {
+  0% {
+    transform: scale(0);
+    transform-origin: bottom left;
+    z-index: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    position: static;
+  }
+  100% {
+    transform: scale(1);
+    position: static;
+  }
+}
+
+@keyframes grow-in-right {
+  0% {
+    transform: scale(0);
+    transform-origin: bottom right;
+    z-index: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    position: static;
+  }
+  100% {
+    transform: scale(1);
+    position: static;
+  }
+}
+
+@keyframes chat-right-margins {
+  100% {
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 850px) {
+  main {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    gap: 5rem;
+    margin: 4rem auto;
+  }
+
+  .right-side {
+    width: 85%;
+  }
+
+  .right-side h1 {
+    font-size: 2.3rem;
+  }
+
+  .right-side p {
+    text-align: center;
+  }
+
+  .background-left {
+    height: 32rem;
+    right: 50%;
+  }
+
+  .background-right {
+    height: 23.5rem;
+    left: 50%;
+  }
+}
