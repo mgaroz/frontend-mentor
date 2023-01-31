@@ -262,7 +262,7 @@ main {
 
 .background-left,
 .background-right {
-  position: absolute;
+  position: fixed;
   z-index: -999;
 }
 
@@ -271,8 +271,8 @@ main {
   width: 32.1875rem;
   border-radius: 0 0 16.09375rem 16.09375rem;
   background: linear-gradient(
-    0deg,
-    var(--color-light-violet),
+    25deg,
+    var(--color-light-violet) 40%,
     var(--color-light-magenta)
   );
   top: 0;
@@ -290,57 +290,53 @@ main {
 }
 
 #bubble-left-1 {
-  position: absolute;
-  top: -100%;
-  left: -100%;
   animation: 0.5s grow-in-left-2 1s forwards;
 }
 
 #bubble-left-2,
 #bubble-left-p-2 {
-  position: absolute;
-  top: -100%;
-  left: -100%;
   animation: 0.5s grow-in-left-2 ease 2.5s forwards;
 }
 
 #bubble-left-3,
 #bubble-left-p-3 {
-  position: absolute;
-  top: -100%;
-  left: -100%;
   animation: 0.5s grow-in-left-2 ease 7s forwards;
 }
 
 #bubble-right-images {
-  position: absolute;
-  bottom: -100%;
-  left: -100%;
   animation: 0.5s grow-in-right ease 4s forwards;
 }
 
 #bubble-right-1,
 #bubble-right-p-1 {
-  position: absolute;
-  top: -100%;
-  left: 100%;
   animation: 0.5s grow-in-right ease 4s forwards;
 }
 
 #bubble-right-2,
 #bubble-right-p-2 {
-  position: absolute;
-  top: -100%;
-  left: 100%;
   animation: 0.5s grow-in-right ease 5.5s forwards;
 }
 
 #pricing-item-1,
 #pricing-item-2 {
+  animation: 0.5s grow-in-left-2 ease 8.5s forwards;
+}
+
+#bubble-left-1,
+#bubble-left-2,
+#bubble-left-p-2,
+#bubble-left-3,
+#bubble-left-p-3,
+#bubble-right-images,
+#bubble-right-1,
+#bubble-right-p-1,
+#bubble-right-2,
+#bubble-right-p-2,
+#pricing-item-1,
+#pricing-item-2 {
   position: absolute;
   top: -100%;
   left: -100%;
-  animation: 0.5s grow-in-left-2 ease 8.5s forwards;
 }
 
 @keyframes grow-in-left-2 {
@@ -382,18 +378,6 @@ main {
   }
 }
 
-#chat-left-2 {
-  display: none;
-}
-
-#chat-right-1 {
-  display: none;
-}
-
-#pricing-1 {
-  display: none;
-}
-
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -403,7 +387,7 @@ main {
   color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 450px) {
+@media (max-width: 850px) {
   main {
     display: block;
     margin: 0 auto;
@@ -416,17 +400,28 @@ main {
     align-items: center;
     width: 85%;
     gap: 5rem;
-    margin: 0 auto;
+    margin: 4rem auto;
   }
 
   .right-side {
     width: 85%;
   }
 
+  .right-side h1 {
+    font-size: 2.3rem;
+  }
+
+  .right-side p {
+    text-align: center;
+  }
+
+  .background-left {
+    height: 32rem;
+    right: 50%;
+  }
+
   .background-right {
-    /* bottom: 70vh; */
-    right: -75vw;
-    overflow: clip;
-    z-index: -999;
+    height: 23.5rem;
+    left: 50%;
   }
 }
