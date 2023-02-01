@@ -154,6 +154,18 @@ button:hover {
 @media (max-width: 850px) {
   header {
     padding-left: 1rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+  }
+
+  header img {
+    text-align: center;
+    width: 40%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 1.25rem;
   }
 
   .wrapper {
@@ -173,6 +185,10 @@ button:hover {
 
   .right-side {
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding-right: 1rem;
   }
 
   .right-side-content {
