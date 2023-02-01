@@ -298,6 +298,10 @@ footer {
     margin: 0 auto;
   }
 
+  header {
+    background-image: url("./images/bg-header-mobile.png");
+  }
+
   .hero h1 {
     font-size: 2rem;
   }
