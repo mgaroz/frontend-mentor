@@ -152,6 +152,11 @@ button:hover {
 }
 
 @media (max-width: 850px) {
+  body {
+    background: url("./images/bg-mobile.svg") no-repeat;
+    background-color: var(--color-violet);
+  }
+
   header {
     padding-left: 1rem;
     padding-bottom: 2rem;
