@@ -241,10 +241,6 @@ main {
     width: 21.875rem;
   }
 
-  .progress-bar-filled {
-    width: 75%;
-  }
-
   .info-bubble {
     border-radius: 0.5rem;
     transform: translate(-50%, 175%);
