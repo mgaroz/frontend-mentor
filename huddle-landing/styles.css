@@ -18,11 +18,23 @@ html {
 body {
   height: 100%;
   display: grid;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: auto 1fr auto;
   background: url("./images/bg-desktop.svg") no-repeat;
   background-size: cover;
   background-color: var(--color-violet);
   font-family: "Open Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 4rem;
+  padding-top: 4rem;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
 }
 
 .wrapper {
@@ -30,7 +42,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
 }
 
 .left-side {
