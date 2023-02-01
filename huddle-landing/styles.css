@@ -10,3 +10,44 @@
   --color-violet: hsl(257, 40%, 49%);
   --color-soft-magenta: hsl(300, 69%, 71%);
 }
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  background: url("./images/bg-desktop.svg") no-repeat;
+  background-size: cover;
+  background-color: var(--color-violet);
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.left-side {
+  padding: 4rem;
+}
+
+.right-side {
+  padding: 4rem;
+  color: white;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: var(--color-soft-magenta);
+}
