@@ -105,6 +105,7 @@ main {
   height: 9.625rem;
   background-color: var(--color-dark-blue);
   border-radius: 0.6rem;
+  position: relative;
 }
 
 .content {
@@ -171,7 +172,7 @@ main {
 }
 
 .info-bubble {
-  position: fixed;
+  position: absolute;
   background-color: white;
   width: 11.1875rem;
   height: 4.5rem;
@@ -180,8 +181,9 @@ main {
   justify-content: space-between;
   padding: 0 1.5rem 0 1.5rem;
   border-radius: 0.5rem 0.5rem 0 0.5rem;
-  top: 37.5%;
-  left: 66.75%;
+  top: 0;
+  right: 0;
+  transform: translate(-22%, -60%);
 }
 
 .info-bubble::after {
@@ -204,12 +206,14 @@ main {
   color: var(--color-grayish-blue);
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .info-bubble p span {
   font-size: 2.25rem;
   font-weight: 700;
   color: var(--color-very-dark-blue);
+  letter-spacing: normal;
 }
 
 .attribution {
@@ -219,4 +223,34 @@ main {
 }
 .attribution a {
   color: var(--color-pale-blue);
+}
+
+@media (max-width: 450px) {
+  body {
+    background: url("./images/bg-mobile.png") no-repeat center;
+    background-size: cover;
+    background-color: var(--color-very-dark-blue);
+  }
+
+  .wrapper {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .widget-right {
+    width: 21.875rem;
+  }
+
+  .info-bubble {
+    border-radius: 0.5rem;
+    transform: translate(-50%, 175%);
+  }
+
+  .info-bubble::after {
+    content: none;
+  }
+
+  .content-top {
+    text-align: center;
+  }
 }
