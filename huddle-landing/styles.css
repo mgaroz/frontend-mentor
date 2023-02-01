@@ -49,6 +49,13 @@ button {
   font-size: 1.125rem;
   font-weight: 400;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--color-soft-magenta);
+  color: white;
 }
 
 .wrapper {
@@ -88,10 +95,28 @@ button {
   font-size: 1.5rem;
 }
 
-.right-side-footer i {
-  margin-right: 0.75rem;
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.icon {
   border: 1px solid white;
   border-radius: 50%;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0.15rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon:hover {
+  color: var(--color-soft-magenta);
+  border: 1px solid var(--color-soft-magenta);
 }
 
 .attribution {
@@ -102,4 +127,56 @@ button {
 
 .attribution a {
   color: var(--color-soft-magenta);
+}
+
+@media (max-width: 1280px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .left-side {
+    padding-right: 1rem;
+  }
+
+  .right-side {
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 850px) {
+  header {
+    padding-left: 1rem;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .left-side {
+    display: flex;
+    padding: 1rem;
+  }
+
+  .left-side img {
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .right-side {
+    justify-content: center;
+  }
+
+  .right-side-content {
+    justify-content: center;
+    align-items: center;
+  }
 }
