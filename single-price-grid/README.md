@@ -23,7 +23,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./price-screenshot.webp)
+
+![](./price-mobile-screenshot.webp)
 
 ### Links
 
