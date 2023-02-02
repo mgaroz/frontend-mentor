@@ -35,6 +35,15 @@ main {
   margin: 0 auto;
 }
 
+button {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -44,6 +53,17 @@ main {
 
 .nav img {
   width: 12.5rem;
+}
+
+.nav-button {
+  width: 12.625rem;
+  height: 3rem;
+  border: 0;
+  border-radius: 1.5rem;
+  background-color: white;
+  font-size: 0.875rem;
+  font-weight: 700;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .hero {
@@ -65,7 +85,6 @@ main {
 }
 
 .hero-left h1 {
-  font-family: "Poppins", sans-serif;
   font-size: 2.5rem;
   margin-top: 0.5rem;
 }
@@ -83,7 +102,7 @@ main {
   color: white;
   background-color: var(--color-pink);
   border-radius: 1.75rem;
-  font-family: "Poppins", sans-serif;
+  font-weight: 700;
 }
 
 .hero-right img {
@@ -130,9 +149,59 @@ main {
   width: 70%;
 }
 
+.cta-container {
+  width: 50rem;
+  height: 17.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-top: 8rem;
+}
+
+.cta {
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 2rem;
+}
+
+.cta-button {
+  width: 25rem;
+  height: 5rem;
+  background-color: var(--color-pink);
+  color: white;
+  border-radius: 2.5rem;
+  border: 0;
+  margin-top: 2.25rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background-color: var(--color-very-dark-cyan);
+  color: white;
+}
+
 .footer-wrapper {
   display: flex;
   justify-content: space-around;
+}
+
+.logo {
+  background-color: white;
+  -webkit-mask-image: url("./images/logo.svg");
+  mask-image: url("./images/logo.svg");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  width: 15rem;
+  height: 2.375rem;
+  mask: url("./images/logo.svg") no-repeat center / contain;
 }
 
 .links ul {
