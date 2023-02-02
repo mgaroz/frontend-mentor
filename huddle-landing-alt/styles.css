@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-pink: hsl(322, 100%, 66%);
+  --color-very-pale-cyan: hsl(193, 100%, 96%);
+  --color-very-dark-cyan: hsl(192, 100%, 9%);
+  --color-grayish-blue: hsl(208, 11%, 55%);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+  font-size: 18px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+header {
+  background: url("./images/bg-hero-desktop.svg") no-repeat;
+  background-color: var(--color-very-pale-cyan);
+  margin: 0 auto;
+}
+
+main {
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3.5rem 5rem 0 5rem;
+}
+
+.nav img {
+  width: 12.5rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1440px;
+  margin: 4.5rem 5rem 4.5rem 5rem;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 31.75rem;
+  gap: 0.75rem;
+}
+
+.hero-left h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  margin-top: 0.5rem;
+}
+
+.hero-left p {
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+.hero-button {
+  margin-top: 1.25rem;
+  width: 17.5rem;
+  height: 3.5rem;
+  border: 0;
+  color: white;
+  background-color: var(--color-pink);
+  border-radius: 1.75rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-right img {
+  width: 42.5625rem;
+}
+
+.wrapper {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards {
+  margin-top: 10rem;
+}
+
+.card {
+  display: flex;
+}
+
+.card-left {
+  flex: 0 0 60%;
+}
+
+.card-right {
+  text-align: center;
+}
+
+.card-right img {
+  width: 70%;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.links ul {
+  columns: 2;
+}
+
+.copyright {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
