@@ -10,11 +10,7 @@ This is a solution to the [Huddle landing page with alternating feature blocks c
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -31,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [Github Pages](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/mgaroz/frontend-mentor/tree/main/huddle-landing-alt)
+- Live Site URL: [Github Pages](https://mgaroz.github.io/frontend-mentor/huddle-landing-alt/)
 
 ## My process
 
