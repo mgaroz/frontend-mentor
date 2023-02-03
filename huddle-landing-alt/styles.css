@@ -333,6 +333,7 @@ address {
   .nav {
     margin: 0 auto;
     max-width: 85%;
+    padding-top: 1rem;
   }
 
   .nav img {
@@ -376,11 +377,12 @@ address {
   }
 
   footer {
-    max-height: 50rem;
+    max-height: 52rem;
   }
 
   .cta-wrapper {
     width: 90%;
+    padding-bottom: 0;
   }
 
   .cta {
@@ -401,12 +403,25 @@ address {
 
   .footer-wrapper {
     flex-direction: column;
-    /* margin-right: 0; */
     align-items: flex-start;
     margin: 0 1rem;
+    gap: 2rem;
+  }
+
+  .logo {
+    width: 50%;
   }
 
   .links ul {
     columns: 1;
+  }
+
+  .social {
+    margin: 0 auto;
+  }
+
+  .copyright {
+    margin: 0;
+    justify-content: center;
   }
 }
