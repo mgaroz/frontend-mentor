@@ -326,6 +326,11 @@ address {
 }
 
 @media (max-width: 450px) {
+  header {
+    background: url("./images/bg-hero-mobile.svg") no-repeat;
+    background-color: var(--color-very-pale-cyan);
+  }
+
   body {
     width: 100%;
   }
@@ -398,6 +403,8 @@ address {
 
   .card-right {
     order: 1;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
   }
 
   .card-left-content h2 {
@@ -405,7 +412,7 @@ address {
   }
 
   .card-left-content p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   footer {
