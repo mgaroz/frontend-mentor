@@ -331,7 +331,7 @@ address {
   }
 
   .nav {
-    margin: 0 auto;
+    margin: 0 auto 5rem auto;
     max-width: 85%;
     padding-top: 1rem;
   }
@@ -390,6 +390,14 @@ address {
   .card {
     flex-direction: column;
     text-align: center;
+  }
+
+  .card-left {
+    order: 2;
+  }
+
+  .card-right {
+    order: 1;
   }
 
   .card-left-content h2 {
