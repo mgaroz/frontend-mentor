@@ -25,6 +25,8 @@ Users should be able to:
 
 ![](./huddle-alt-screenshot.webp)
 
+![](./huddle-alt-mobile.webp)
+
 ### Links
 
 - Solution URL: [Github](https://github.com/mgaroz/frontend-mentor/tree/main/huddle-landing-alt)
