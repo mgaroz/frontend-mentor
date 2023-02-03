@@ -28,7 +28,6 @@ body {
 header {
   background: url("./images/bg-hero-desktop.svg") no-repeat;
   background-color: var(--color-very-pale-cyan);
-  margin: 0 auto;
 }
 
 main {
@@ -37,6 +36,7 @@ main {
 
 button {
   font-family: "Open Sans", sans-serif;
+  cursor: pointer;
 }
 
 h1,
@@ -105,6 +105,14 @@ h2 {
   font-weight: 700;
 }
 
+.nav-button:hover {
+  color: var(--color-grayish-blue);
+}
+
+.hero-button:hover {
+  background-color: #ff9bdb;
+}
+
 .hero-right img {
   width: 42.5625rem;
 }
@@ -151,7 +159,6 @@ h2 {
 
 .cta-wrapper {
   margin: 0 auto;
-  /* background: linear-gradient(white 75%, var(--color-very-dark-cyan) 25%); */
   display: flex;
   justify-content: center;
   padding-bottom: 3.5rem;
@@ -191,6 +198,10 @@ h2 {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+.cta-button:hover {
+  background-color: #ff9bdb;
+}
+
 footer {
   background-color: var(--color-very-dark-cyan);
   color: white;
@@ -205,6 +216,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-right: 5rem;
 }
 
 address {
@@ -243,13 +255,32 @@ address {
   gap: 5.5rem;
 }
 
+.links ul li {
+  cursor: pointer;
+}
+
+.links ul li:hover {
+  text-decoration: underline;
+}
+
 .social {
   display: flex;
+  font-size: 2rem;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.social p:hover {
+  color: var(--color-pink);
 }
 
 .copyright {
   display: flex;
   justify-content: flex-end;
+  margin-right: 5rem;
+  font-size: 0.75rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
 }
 
 .attribution {
