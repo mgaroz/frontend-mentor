@@ -192,6 +192,10 @@ footer {
   justify-content: space-around;
 }
 
+address {
+  flex: 0 1 25%;
+}
+
 .logo {
   width: 15rem;
   height: 2.375rem;
