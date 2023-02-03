@@ -335,6 +335,16 @@ address {
     max-width: 85%;
   }
 
+  .nav img {
+    width: 6.5rem;
+  }
+
+  .nav-button {
+    width: 6.5rem;
+    height: 2rem;
+    font-size: 0.75rem;
+  }
+
   .hero {
     max-width: 100%;
     grid-template-columns: none;
@@ -344,6 +354,7 @@ address {
   .hero-left {
     max-width: 85%;
     margin: 0 auto;
+    text-align: center;
   }
 
   .hero-right {
@@ -351,11 +362,24 @@ address {
   }
 
   .hero-right img {
-    width: 120px;
+    width: 100%;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  footer {
+    max-height: 50rem;
   }
 
   .footer-wrapper {
     flex-direction: column;
     margin-right: 0;
+    align-items: flex-start;
+  }
+
+  .links ul {
+    columns: 1;
   }
 }
