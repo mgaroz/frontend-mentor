@@ -350,6 +350,7 @@ address {
     max-width: 100%;
     grid-template-columns: none;
     margin: 0 auto;
+    gap: 4rem;
   }
 
   .hero-left {
@@ -357,6 +358,20 @@ address {
     margin: 0 auto;
     text-align: center;
     align-items: center;
+  }
+
+  .hero-left h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-left p {
+    font-size: 1rem;
+  }
+
+  .hero-button {
+    height: 2.5rem;
+    width: auto;
+    padding: 0.5rem 3.5rem;
   }
 
   .hero-right {
@@ -374,6 +389,15 @@ address {
 
   .card {
     flex-direction: column;
+    text-align: center;
+  }
+
+  .card-left-content h2 {
+    font-size: 1.25rem;
+  }
+
+  .card-left-content p {
+    font-size: 1rem;
   }
 
   footer {
