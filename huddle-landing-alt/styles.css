@@ -193,15 +193,8 @@ footer {
 }
 
 .logo {
-  background-color: white;
-  -webkit-mask-image: url("./images/logo.svg");
-  mask-image: url("./images/logo.svg");
-  mask-repeat: no-repeat;
-  mask-size: contain;
-  mask-position: center;
   width: 15rem;
   height: 2.375rem;
-  mask: url("./images/logo.svg") no-repeat center / contain;
 }
 
 .links ul {
