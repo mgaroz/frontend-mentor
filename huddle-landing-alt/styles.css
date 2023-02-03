@@ -324,3 +324,38 @@ address {
     font-size: 1.5rem;
   }
 }
+
+@media (max-width: 450px) {
+  body {
+    width: 100%;
+  }
+
+  .nav {
+    margin: 0 auto;
+    max-width: 85%;
+  }
+
+  .hero {
+    max-width: 100%;
+    grid-template-columns: none;
+    margin: 0 auto;
+  }
+
+  .hero-left {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+
+  .hero-right {
+    text-align: center;
+  }
+
+  .hero-right img {
+    width: 120px;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    margin-right: 0;
+  }
+}
