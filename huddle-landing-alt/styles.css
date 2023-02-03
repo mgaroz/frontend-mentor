@@ -215,14 +215,36 @@ address {
   gap: 2rem;
 }
 
+.address-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.address-item {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
 .logo {
   width: 15rem;
   height: 2.375rem;
-  /* margin-bottom: 2rem; */
+}
+
+.links {
+  flex: 0 1 25%;
+  line-height: 2.4;
 }
 
 .links ul {
   columns: 2;
+  list-style-type: none;
+  gap: 5.5rem;
+}
+
+.social {
+  display: flex;
 }
 
 .copyright {
