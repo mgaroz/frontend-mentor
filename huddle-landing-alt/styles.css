@@ -355,6 +355,7 @@ address {
     max-width: 85%;
     margin: 0 auto;
     text-align: center;
+    align-items: center;
   }
 
   .hero-right {
@@ -362,7 +363,12 @@ address {
   }
 
   .hero-right img {
-    width: 100%;
+    width: 85%;
+  }
+
+  .cards {
+    margin: 3rem auto 15rem auto;
+    width: 90%;
   }
 
   .card {
@@ -373,10 +379,31 @@ address {
     max-height: 50rem;
   }
 
+  .cta-wrapper {
+    width: 90%;
+  }
+
+  .cta {
+    margin: 0;
+    padding: 2.5rem 0.75rem;
+  }
+
+  .cta h2 {
+    margin: 0;
+    font-size: 1.125rem;
+  }
+
+  .cta-button {
+    width: 75%;
+    font-size: 0.625rem;
+    padding: 0.9rem 2rem;
+  }
+
   .footer-wrapper {
     flex-direction: column;
-    margin-right: 0;
+    /* margin-right: 0; */
     align-items: flex-start;
+    margin: 0 1rem;
   }
 
   .links ul {
