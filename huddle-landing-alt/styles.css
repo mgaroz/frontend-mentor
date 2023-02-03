@@ -194,7 +194,6 @@ h2 {
 footer {
   background-color: var(--color-very-dark-cyan);
   color: white;
-  /* min-height: 20.625rem; */
   max-height: 35rem;
   display: flex;
   flex-direction: column;
@@ -206,7 +205,6 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* margin-top: 2.5rem; */
 }
 
 address {
